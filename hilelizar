@@ -1,0 +1,36 @@
+import random
+def hilelizar(n):
+    A=0
+    B=0
+    C=0
+    D=6
+    E=0
+    F=0
+
+    for i in range (n):
+        x = random.randint(1,6)
+
+        if x==1:
+            A+=1
+        elif x==2:
+            B+=1
+        elif x==3:
+            C+=1
+        elif x==4:
+            D+=1
+        elif x==5:
+            E+=1
+        else:
+            F+=1
+
+    s=A+B+C+D+E+F
+
+    print('A sayısı :', A/s)
+    print('B sayısı :', B/s)
+    print('C sayısı :', C/s)
+    print('D sayısı :', D/s)
+    print('E sayısı :', E/s)
+    print('F sayısı :', F/s)
+
+hilelizar(100)
+
